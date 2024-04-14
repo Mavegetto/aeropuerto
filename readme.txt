@@ -20,3 +20,6 @@ direccion              ->dir
 telefono               -tel
 correo                 -cor
 clave                  -cla
+
+
+Marco: como llamar y guaradar en el procedure: CALL insertarUsuario('marco','merida',19,1,'guatemala','5ta calle','8042-5784','marcoandres','marco');
