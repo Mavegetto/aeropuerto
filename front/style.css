@@ -1,0 +1,436 @@
+body{
+background: #f5f5dc ;
+
+}
+
+
+
+
+.log {
+
+    width: 360px;
+    height: 620px;
+    border-radius: 0.75rem;
+    background-color: rgba(17, 24, 39, 1);
+    padding: 2rem;
+    color: rgba(243, 244, 246, 1);
+    position: absolute;
+    left: 15%;
+    top: 2%;
+ 
+    
+
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+  
+  }
+  
+  
+  .form {
+    margin-top: 1.1rem;
+
+  }
+  
+  .input-group {
+    margin-top: 0.25rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  
+  .input-group label {
+    display: block;
+    color: rgba(156, 163, 175, 1);
+    margin-bottom: 4px;
+  }
+  
+  .input-group input {
+    width: 100%;
+    border-radius: 0.375rem;
+    border: 1px solid rgba(55, 65, 81, 1);
+    outline: 0;
+    background-color: rgba(17, 24, 39, 1);
+    padding: 0.75rem 1rem;
+    color: rgba(243, 244, 246, 1);
+  }
+  
+  .input-group input:focus {
+    border-color: rgba(167, 139, 250);
+  }
+  
+  
+  .sign {
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 220px;
+    background-color: rgba(167, 139, 250, 1);
+    padding: 0.75rem;
+    text-align: center;
+    color: rgba(17, 24, 39, 1);
+    border: none;
+    border-radius: 0.375rem;
+    font-weight: 600;
+  }
+  
+  .social-message {
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
+  }
+  
+  .line {
+    height: 1px;
+    flex: 1 1 0%;
+    background-color: rgba(55, 65, 81, 1);
+  }
+  
+  .social-message .message {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: rgba(156, 163, 175, 1);
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .social-icons .icon {
+    border-radius: 0.125rem;
+    padding: 0.75rem;
+    border: none;
+    background-color: transparent;
+    margin-left: 8px;
+  }
+  
+  .social-icons .icon svg {
+    height: 1.25rem;
+    width: 1.25rem;
+    fill: #fff;
+  }
+  
+  .signup {
+    text-align: center;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    color: rgba(156, 163, 175, 1);
+  }
+  
+  .button {
+    --color: #00A97F;
+    padding: 10px 0.7em;
+    background-color: transparent;
+    border-radius: .3em;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: 400;
+    font-size: 16px;
+    border: 1px solid;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: var(--color);
+    z-index: 1;
+    height: 50px;
+    width: 28%;
+   }
+   
+   .button::before, .button::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: var(--color);
+    transition: 1s ease;
+   }
+   
+   .button::before {
+    top: -1em;
+    left: -1em;
+   }
+   
+   .button::after {
+    left: calc(100% + 1em);
+    top: calc(100% + 1em);
+   }
+   
+   .button:hover::before, .button:hover::after {
+    height: 410px;
+    width: 410px;
+   }
+   
+   .button:hover {
+    color: rgb(10, 25, 30);
+   }
+   
+   .button:active {
+    filter: brightness(.8);
+   }
+   
+   .button2 {
+    display: flex;
+    padding: 10px 15px;
+    gap: 15px;
+    background-color: none;
+    outline: 3px none solid;
+    outline-offset: -3px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 400ms;
+  }
+  
+  #button2 .text {
+    
+    font-weight: 700;
+    font-size: 40%;
+    transition: 400ms;
+    color: black;
+  }
+  
+  #button2 svg path {
+    transition: 400ms;
+  }
+  
+  #button2:hover {
+    background-color: transparent;
+  }
+  
+  #button2:hover .text {
+    color: #223542;
+  }
+  
+  #button2:hover svg path {
+    fill: #293c48;
+  }
+
+  .button3 {
+    display: flex;
+    padding: 10px 15px;
+    gap: 15px;
+    background-color: none;
+    outline: 3px none solid;
+    outline-offset: -3px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 400ms;
+  }
+  
+  #button3 .text {
+    
+    font-weight: 700;
+    font-size: 40%;
+    transition: 400ms;
+    color: black;
+  }
+  
+  #button3 svg path {
+    transition: 400ms;
+  }
+  
+  #button3:hover {
+    background-color: transparent;
+  }
+  
+  #button3:hover .text {
+    color: #223542;
+  }
+  
+  #button3:hover svg path {
+    fill: #293c48;
+  }
+
+  .button4 {
+    display: flex;
+    padding: 10px 15px;
+    gap: 15px;
+    background-color: none;
+    outline: 3px none solid;
+    outline-offset: -3px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 400ms;
+  }
+  
+  #button4 .text {
+    
+    font-weight: 700;
+    font-size: 40%;
+    transition: 400ms;
+    color: black;
+  }
+  
+  #button4 svg path {
+    transition: 400ms;
+  }
+  
+  #button4:hover {
+    background-color: transparent;
+  }
+  
+  #button4:hover .text {
+    color: #223542;
+  }
+  
+  #button4:hover svg path {
+    fill: #293c48;
+  }
+
+  
+  .buttone {
+    --color: #a90000;
+    padding: 10px 0.7em;
+    background-color: transparent;
+    border-radius: .3em;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: 400;
+    font-size: 16px;
+    border: 1px solid;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: var(--color);
+    z-index: 1;
+    height: 50px;
+    width: 28%;
+    
+   }
+   
+   .buttone::before, .buttone::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: var(--color);
+    transition: 1s ease;
+   }
+   
+   .buttone::before {
+    top: -1em;
+    left: -1em;
+   }
+   
+   .buttone::after {
+    left: calc(100% + 1em);
+    top: calc(100% + 1em);
+   }
+   
+   .buttone:hover::before, .buttone:hover::after {
+    height: 410px;
+    width: 410px;
+   }
+   
+   .buttone:hover {
+    color: rgb(10, 25, 30);
+   }
+   
+   .buttone:active {
+    filter: brightness(.8);
+   }
+   
+  .buttonu {
+    --color: rgb(38, 186, 186);
+    padding: 0.8em 1.4em;
+    background-color: transparent;
+    border-radius: .3em;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: 400;
+    font-size: 16px;
+    border: 1px solid;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: var(--color);
+    z-index: 1;
+    height: 50px;
+    width: 28%;
+   }
+   
+   .buttonu::before, .buttonu::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: var(--color);
+    transition: 1s ease;
+   }
+   
+   .buttonu::before {
+    top: -1em;
+    left: -1em;
+   }
+   
+   .buttonu::after {
+    left: calc(100% + 1em);
+    top: calc(100% + 1em);
+   }
+   
+   .buttonu:hover::before, .buttonu:hover::after {
+    height: 410px;
+    width: 410px;
+   }
+   
+   .buttonu:hover {
+    color: rgb(10, 25, 30);
+   }
+   
+   .buttonu:active {
+    filter: brightness(.8);
+   }
+   
+   .imagen{
+    background-color: #223542;
+    width: 100%;
+    height: 10%;
+
+
+   }
+   .fondo{
+    width: 100%;
+    height: 40%;
+
+
+   }
+
+
+    .titulo{
+        width: 80%;
+        height: 80%;
+        position: absolute;
+        top: 22.4%;
+        color: white;
+        font-size: 40.7px;
+        left: 8.7%;
+        
+    }
+    .testil{
+font-weight: 600;
+
+    }
+
