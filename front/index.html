@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid" style="background-color: white; height: 20%;">
+          <img src="https://logowik.com/content/uploads/images/united-airlines-old8802.logowik.com.webp" style="width: 5%;" alt="">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          
+           <!-- Inicio de Ingreso -->
+              
+<button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+style="width: 10%; height: 70%; color: black; position: absolute; left: 64%; top: 14%;" 
+ id="button2" >
+   Ingreso
+   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-plus-fill" viewBox="0 0 16 16">
+    <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+    <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5"/>
+  </svg>
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content"   style="background:none; height: 800px; border: none;">
+        <div class="modal-header" style="background:none ; border: none;" >
+          <button type="button" class="btn-close"  style="background-color: red; "data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="log" id="log"  >
+                <p class="title">Ingreso de Usuarios</p>
+                <form class="form">
+                    <div class="input-group"   style="left: -2%; width: 102%;">
+                        <label for="username">Id</label>
+                        <input type="text" id="idus" placeholder="id">
+                    </div>
+                    <div class="input-group" style="left: -2%; width: 50%;">
+                        <label for="username">Nombre</label>
+                        <input type="text" id="nombre" placeholder="Nombre">
+                    </div>
+                    <div class="input-group" style="left: 50%; width: 50%; top: -74px;">
+                        <label for="username">Apellido</label>
+                        <input type="text" id="ape" placeholder="Apellido">
+                    </div>
+                    <div class="input-group" style="left: -2%; width: 50%; top: -71px;">
+                        <label for="username">Edad</label>
+                        <input type="text" id="eda" placeholder="Edad">
+                    </div>
+                    <div class="input-group" style="left: 50%; width: 50%; top: -145px;">
+                        <label for="username">Npasaporte</label>
+                        <input type="text" id="npas" placeholder="Pasaporte">
+                    </div>
+                    <div class="input-group" style="left: -2%; width: 50%; top: -144px;">
+                        <label for="username">Pais</label>
+                        <input type="text" id="pais" placeholder="Pais">
+                    </div>
+                    <div class="input-group" style="left: 50%; width: 50%; top: -218px;">
+                        <label for="username">Direccion</label>
+                        <input type="text" id="dir" placeholder="Direccion">
+                    </div>
+                    <div class="input-group" style="left: -2%; width: 50%; top: -217px;">
+                        <label for="username">Telefono</label>
+                        <input type="tel" id="tel" placeholder="Telefono">
+                    </div>
+        
+                    <div class="input-group" style="left: 50%; width: 50%; top: -290px;">
+                        <label for="username">Clave</label>
+                        <input type="text" id="cla" placeholder="Clave">
+                    </div>
+                    <div class="input-group" style="left: -2%; width: 102%; top: -290px;">
+                        <label for="password">Correo</label>
+                        <input type="email" id="cor" placeholder="Correo">
+                    </div>
+                  
+                    <button style="position: absolute; top: 550px; left: 63%;" id="guardar" class="button" type="button">Guardar</button>
+                </form>
+                </div>
+        </div>
+        <div class="modal-footer" style="background: none; border: none;">
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- fin de ingreso -->
+
+
+
+<!-- inicio de eliminar -->
+
+  <!-- Button trigger modal -->
+<button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal"
+ data-bs-target="#exampleModal2" id="button3" 
+ style="width: 10%; height: 70%; color: black; position: absolute; left: 75%; top: 14%;">
+    Eliminar
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
+        <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5M11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47M8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5"/>
+      </svg>
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content" style="height: 800px; background: none; border: none;">
+        <div class="modal-header" style="background: none; border: none;" >
+          <button type="button" class="btn-close" style="background-color: red; " data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="log" id="log"  >
+            <p class="title">Eliminar Usuarios</p>
+           <form class="form">
+           <div class="input-group"   style="left: -2%; width: 102%;">
+             <label for="username">Id</label>
+                <input type="text" id="idus" placeholder="id">
+              </div>
+                <div class="input-group" style="left: -2%; width: 50%;">
+              <label for="username">Nombre</label>
+              <input type="text" id="nombre" placeholder="Nombre">
+            </div>
+                <div class="input-group" style="left: 50%; width: 50%; top: -74px;">
+                    <label for="username">Apellido</label>
+                    <input type="text" id="ape" placeholder="Apellido">
+                </div>
+                <div class="input-group" style="left: -2%; width: 50%; top: -71px;">
+                    <label for="username">Edad</label>
+                    <input type="text" id="eda" placeholder="Edad">
+            </div>
+             <div class="input-group" style="left: 50%; width: 50%; top: -145px;">
+                     <label for="username">Npasaporte</label>
+                   <input type="text" id="npas" placeholder="Pasaporte">
+            </div>
+           <div class="input-group" style="left: -2%; width: 50%; top: -144px;">
+           <label for="username">Pais</label>
+          <input type="text" id="pais" placeholder="Pais">
+            </div>
+            <div class="input-group" style="left: 50%; width: 50%; top: -218px;">
+         <label for="username">Direccion</label>
+             <input type="text" id="dir" placeholder="Direccion">
+           </div>
+         <div class="input-group" style="left: -2%; width: 50%; top: -217px;">
+            <label for="username">Telefono</label>
+            <input type="tel" id="tel" placeholder="Telefono">
+            </div>
+               
+                           <div class="input-group" style="left: 50%; width: 50%; top: -290px;">
+                               <label for="username">Clave</label>
+                               <input type="text" id="cla" placeholder="Clave">
+                           </div>
+                           <div class="input-group" style="left: -2%; width: 102%; top: -290px;">
+                               <label for="password">Correo</label>
+                               <input type="email" id="cor" placeholder="Correo">
+                           </div>
+                         
+                           <button style="position: absolute; top: 550px; left: 63%;" id="eliminar" class="buttone" type="button">Eliminar</button>
+                       </form>
+                       </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+<!-- fin de eliminar -->
+
+
+
+
+<!-- inicio de editar -->
+
+  <!-- Button trigger modal -->
+<button type="button" 
+class="btn btn-outline-secondary" data-bs-toggle="modal"  id="button4"
+style="width: 10%; height: 70%; color: black; position: absolute; left: 86%; top: 14%;" 
+data-bs-target="#exampleModal3">
+   Editar
+   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-clockwise" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2z"/>
+    <path d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466"/>
+  </svg>
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content" style="background: none; height: 800px; border: none;" >
+        <div class="modal-header" style="background: none;  border: none;" >
+          <button type="button" class="btn-close" style="background-color: red; "  data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="log" id="log"  >
+                
+                <p class="title">Editar Usuarios</p>
+               <form class="form">
+               <div class="input-group"   style="left: -2%; width: 102%;">
+                 <label for="username">Id</label>
+                    <input type="text" id="idus" placeholder="id">
+                  </div>
+                    <div class="input-group" style="left: -2%; width: 50%;">
+                  <label for="username">Nombre</label>
+                  <input type="text" id="nombre" placeholder="Nombre">
+                </div>
+                    <div class="input-group" style="left: 50%; width: 50%; top: -74px;">
+                        <label for="username">Apellido</label>
+                        <input type="text" id="ape" placeholder="Apellido">
+                    </div>
+                    <div class="input-group" style="left: -2%; width: 50%; top: -71px;">
+                        <label for="username">Edad</label>
+                        <input type="text" id="eda" placeholder="Edad">
+                </div>
+                 <div class="input-group" style="left: 50%; width: 50%; top: -145px;">
+                         <label for="username">Npasaporte</label>
+                       <input type="text" id="npas" placeholder="Pasaporte">
+                </div>
+               <div class="input-group" style="left: -2%; width: 50%; top: -144px;">
+               <label for="username">Pais</label>
+              <input type="text" id="pais" placeholder="Pais">
+                </div>
+                <div class="input-group" style="left: 50%; width: 50%; top: -218px;">
+             <label for="username">Direccion</label>
+                 <input type="text" id="dir" placeholder="Direccion">
+               </div>
+             <div class="input-group" style="left: -2%; width: 50%; top: -217px;">
+                <label for="username">Telefono</label>
+                <input type="tel" id="tel" placeholder="Telefono">
+                </div>
+                   
+                               <div class="input-group" style="left: 50%; width: 50%; top: -290px;">
+                                   <label for="username">Clave</label>
+                                   <input type="text" id="cla" placeholder="Clave">
+                               </div>
+                               <div class="input-group" style="left: -2%; width: 102%; top: -290px;">
+                                   <label for="password">Correo</label>
+                                   <input type="email" id="cor" placeholder="Correo">
+                               </div>
+                             
+                               <button style="position: absolute; top: 550px; left: 63%;" id="editar" class="buttonu" type="button">Editar</button>
+                           </form>
+                           <svg version="1.1" id="Airplane" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="110.754px" height="108.004px" viewBox="0 0 110.754 108.004" enable-background="new 0 0 110.754 108.004"
+	 xml:space="preserve">
+<g>
+	<g>
+		<polygon fill="#CCCCCC" points="110.754,54.015 109.192,51.139 105.755,49.107 101.474,48.31 80.177,47.876 68.875,33.159 
+			74.129,32.583 75.631,30.703 75.509,28.449 73.134,27.196 64.571,27.506 57.261,17.129 61.944,16.818 62.941,15.13 62.941,13.005 
+			61.508,12.005 52.947,12.003 44.638,1.471 41.326,0.001 34.951,0 47.009,25.377 50.944,37.128 51.943,43.878 50.192,47.847 
+			46.88,49.643 42.63,50.072 19.63,50.126 8.007,34.872 0.008,33.807 5.191,52.526 0.316,53.994 		"/>
+	</g>
+	<g>
+		<polygon fill="#CCCCCC" points="110.754,54.015 109.191,56.389 105.753,58.17 101.472,58.841 80.175,59.204 68.867,73.886 
+			74.121,74.447 75.623,76.32 75.499,78.57 73.124,79.819 64.562,79.506 57.247,89.879 61.938,90.192 62.941,91.88 62.941,94.005 
+			61.496,96.004 52.934,96.004 44.619,106.535 41.306,108.004 34.931,108.004 46.999,82.129 50.938,70.129 51.939,63.254 
+			50.19,59.222 46.878,57.393 42.628,56.947 19.628,56.876 8,72.122 0,73.182 5.191,54.963 0.316,53.994 		"/>
+	</g>
+</g>
+</svg>
+                           </div> 
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- fin editar -->
+          </div>
+        </div>
+      </nav>
+    
+
+      
+        <div class="imagen">
+
+            <img class="fondo"  src="c:\Users\Compu Fire\Downloads\ciudad.jpg" alt="">
+            
+            </div>
+
+            
+            
+    
+</body>
+<script src="main.js"></script>
+</html>
