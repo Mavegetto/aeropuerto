@@ -31,7 +31,7 @@ funcion de guardar asientos
 DELIMITER //
 CREATE PROCEDURE insertarAsiento(IN no_asientosP VARCHAR(10), IN posicionP VARCHAR(30), IN id_avionP INT)
 BEGIN
-INSERT INTO asientos(no_asientos, posicion, id_avion) VALUES (no_avionP,posicionP,id_avionP);
+INSERT INTO asientos(no_asientos, posicion, id_avion) VALUES (no_asientosP,posicionP,id_avionP);
 END;
 //
 
