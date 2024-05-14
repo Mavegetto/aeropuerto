@@ -12,7 +12,6 @@ Marco Merida: normalizacion, base de datos, tabla de usuarios, vitacora de usuar
 
 id                     ->idus
 nombre                 ->nombre
-apellido               ->ape
 edad                   -eda
 npasaporte             ->npas
 pais                   ->pais
