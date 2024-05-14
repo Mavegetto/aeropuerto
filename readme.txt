@@ -21,7 +21,7 @@ correo                 -cor
 clave                  -cla
 
 
-Marco: como llamar y guaradar en el procedure usuarios: CALL insertarUsuario('marco','merida',19,1,'guatemala','5ta calle','8042-5784','marcoandres','marco');
+Marco: como llamar y guaradar en el procedure usuarios: CALL insertarUsuario('marco',19,1,'guatemala','5ta calle','8042-5784','marcoandres','marco');
 
 Marco: como llamar y guaradar en el procedure aeropuerto: CALL insertarAeropuerto('nombre', 'direccion', 'pais');
 
