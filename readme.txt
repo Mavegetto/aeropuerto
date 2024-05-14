@@ -32,4 +32,4 @@ Marco: como llamar y guaradar en el procedure asientos:  CALL insertarAsiento('n
 
 Marco: como llamar y guaradar en el procedure vuelo: CALL insertarVuelo('origen', 'destino', 'escala', id_avion);
 
-Marco: como llamar y guardar en el procedure boleto: CALL insertarBoleta('hora', id_vuelo);
+Marco: como llamar y guardar en el procedure boleto: CALL insertarBoleta('hora', id_vuelo);;
