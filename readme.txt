@@ -12,7 +12,6 @@ Marco Merida: normalizacion, base de datos, tabla de usuarios, vitacora de usuar
 
 id                     ->idus
 nombre                 ->nombre
-apellido               ->ape
 edad                   -eda
 npasaporte             ->npas
 pais                   ->pais
@@ -22,7 +21,7 @@ correo                 -cor
 clave                  -cla
 
 
-Marco: como llamar y guaradar en el procedure usuarios: CALL insertarUsuario('marco','merida',19,1,'guatemala','5ta calle','8042-5784','marcoandres','marco');
+Marco: como llamar y guaradar en el procedure usuarios: CALL insertarUsuario('marco',19,1,'guatemala','5ta calle','8042-5784','marcoandres','marco');
 
 Marco: como llamar y guaradar en el procedure aeropuerto: CALL insertarAeropuerto('nombre', 'direccion', 'pais');
 
@@ -32,4 +31,4 @@ Marco: como llamar y guaradar en el procedure asientos:  CALL insertarAsiento('n
 
 Marco: como llamar y guaradar en el procedure vuelo: CALL insertarVuelo('origen', 'destino', 'escala', id_avion);
 
-Marco: como llamar y guardar en el procedure boleto: CALL insertarBoleta('hora', id_vuelo);;
+Marco: como llamar y guardar en el procedure boleto: CALL insertarBoleta('hora', id_vuelo);
