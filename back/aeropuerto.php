@@ -1,28 +1,16 @@
+
 <?php
-class aeropuerto{
+
+class Aeropuerto {
     private $nombre;
-    private $apellido;
-    private $edad;
-    private $nboleto;
-    private $asientos;
-    private $vuelos;
-    
+    private $direccion;
+    private $pais;
 
-    public function __construct($nom,$ape,$eda,$nbo,$asie,$vue){
-        $this->nombre=$nom;
-        $this->apellido=$ape;
-        $this->edad=$eda;
-        $this->nboleto=$nbo;
-        $this->asientos=$asie;
-        $this->vuelos=$vue;
-        
+    public function __construct($nombre, $direccion, $pais) {
+        $this->nombre = $nombre;
+        $this->dirreccion = $dirreccion;
+        $this->pais = $pais;
     }
 
-    public function insertar(){
-        return "INSERT INTO aeropuerto (nombre, apellido, edad, nboleto, asientos , vuelos ) VALUES ('$this->nombre', '$this->apellido', '$this->edad', '$this->nboleto', '$this->asientos', '$this->vuelos')";
-    }
-
-   
 }
-
 ?>
