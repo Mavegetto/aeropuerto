@@ -1,9 +1,6 @@
-
 <?php
-
 class Usuario {
     private $nombre;
-    private $apellido;
     private $edad;
     private $npasaporte;
     private $pais;
@@ -12,9 +9,8 @@ class Usuario {
     private $email;
     private $clave;
 
-    public function __construct($nombre, $apellido, $edad, $npasaporte, $pais, $dirrec, $telefono, $email,$clave) {
+    public function __construct($nombre, $edad, $npasaporte, $pais, $dirrec, $telefono, $email, $clave) {
         $this->nombre = $nombre;
-        $this->apellido = $apellido;
         $this->edad = $edad;
         $this->npasaporte = $npasaporte;
         $this->pais = $pais;
