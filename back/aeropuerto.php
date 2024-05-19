@@ -12,5 +12,14 @@ class Aeropuerto {
         $this->pais = $pais;
     }
 
+    public function insertar(){
+        return CALL insertarAsiento('no_asiento', 'posicion', 'id_avion');
+    }
+
+    public function extraer(){
+        return "SELECT * FROM "
+    }
 }
+
+
 ?>

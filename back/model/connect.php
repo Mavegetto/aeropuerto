@@ -3,10 +3,9 @@
 class conexion{
     private $servidor;
     private $usuario;
-    private $clave;
     private $con;
     private $dbdatos;
-    private $nboletos
+    private $boletos
     private $asientos;
     private $vuelos;
    
@@ -16,7 +15,7 @@ class conexion{
         $this->usuario="root";
         $this->clave="";
         $this->dbdatos="aeropuerto";
-        $this->nboletos="";
+        $this->boletos="";
         $this->asientos="";
         $this->vuelos="";
       
@@ -27,9 +26,9 @@ class conexion{
         $this->con=mysqli_connect(
             $this->servidor,
             $this->usuario,
-            $this->clave,
+
             $this->dbdatos,
-            $this->nboletos,
+            $this->boletos,
             $this->asientos,
             $this->vuelos,
         );
