@@ -2,30 +2,27 @@
 require_once("..\model\connect.php");
 require_once("..\model\aeropuerto.php");
 
-    function Vuelos($nom,$usu,$eda,$nbo,$asie,$vue){
+    function Avion($no_avion,$nombre,$id_aeropuerto){
     $con=new conexion();
-    $aeropuerto=new aeropuerto($nom,$usu,$eda,$bo,$asie,$vue);
+    $aeropuerto=new aeropuerto($no_avion,$nombre,$id_aeropuerto);
     $con->conectar();
     $con->envio($aeropuerto->Insertar());
     $con->desconectar();
 }
     function Datos(){
     $con=new conexion(); 
-    $aeropuerto= new Viaje('','','','','','','','');
+    $aeropuerto= new Viaje('','','');
     $con->conectar();
-    $=$con->consulta($mas->Extraer());
+    $=$con->registro($mas->Extraer());
     $datos='';
     $aerolinea=array();
    while($columna=mysqli_fetch_array($aerolinea)){
    
     extract($columna);
-    $datos=array("id"=>$columna['id'],
+    $datos=array("id_aeropuerto"=>$columna['id_aeropuerto'],
                  "nombre"=>$columna['nombre'],
-                 "usuario"=>$columna['usuario'],
-                 "edad"=>$columna['edad'],
-                 "boleto"=>$columna['boleto']
-                 "asientos"=>$columna['asientos'],
-                 "vuelo"=>$columna['vuelo'],
+                 "no_avion"=>$columna['no_avion'],
+                
                 );
 
                 array_push($aerolinea,$datos);

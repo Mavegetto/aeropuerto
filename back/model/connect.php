@@ -5,9 +5,7 @@ class conexion{
     private $usuario;
     private $con;
     private $dbdatos;
-    private $boletos
-    private $asientos;
-    private $vuelos;
+  
    
 
     public function __construct(){
@@ -15,9 +13,6 @@ class conexion{
         $this->usuario="root";
         $this->clave="";
         $this->dbdatos="aeropuerto";
-        $this->boletos="";
-        $this->asientos="";
-        $this->vuelos="";
       
         
     }
@@ -26,11 +21,8 @@ class conexion{
         $this->con=mysqli_connect(
             $this->servidor,
             $this->usuario,
-
             $this->dbdatos,
-            $this->boletos,
-            $this->asientos,
-            $this->vuelos,
+            
         );
     } 
 
@@ -39,9 +31,9 @@ class conexion{
         mysqli_query($this->con,$sql);
     } 
 
-    public function consulta($sql){
+    public function registro($sql){
         $tabla=mysqli_query($this->con,$sql);
-        return $tabla;
+        return $con;
     }
 
     public function desconectar(){
