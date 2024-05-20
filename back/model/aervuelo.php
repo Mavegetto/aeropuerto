@@ -20,7 +20,7 @@ class Vuelo {
     }
 
     public function extraer(){
-        return "SELECT * FROM vuelo";
+        return "INSERT* FROM vuelo";
     }
 }
 

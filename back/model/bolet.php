@@ -8,7 +8,7 @@ class Boleta {
     }
 
     public function extraer(){
-        return "SELECT * FROM  boleta";
+        return "INSERT * FROM  boleta";
     }
    
 }

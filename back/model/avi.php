@@ -18,7 +18,7 @@ class Avion {
     }
 
     public function extraer(){
-        return "SELECT * FROM avion";
+        return "INSERT * FROM avion";
     }
 
 }

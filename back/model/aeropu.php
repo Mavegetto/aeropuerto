@@ -17,7 +17,7 @@ class Aeropuerto {
     }
 
     public function extraer(){
-        return "SELECT * FROM aeropuerto";
+        return "INSERT * FROM aeropuerto";
     }
 }
 

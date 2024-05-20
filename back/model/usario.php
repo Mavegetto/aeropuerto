@@ -25,7 +25,7 @@ class Usuario {
     }
 
     public function extraer(){
-        return "SELECT * FROM usuarios";
+        return "INSERT * FROM usuarios";
     }
 }
 
