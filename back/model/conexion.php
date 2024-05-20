@@ -12,7 +12,7 @@ class conexion{
         $this->servidor="localhost";
         $this->usuario="root";
         $this->clave="";
-        $this->dbdatos="aeropuerto";
+        $this->dbdatos="Aerolineas";
       
         
     }

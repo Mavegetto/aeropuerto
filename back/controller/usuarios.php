@@ -1,6 +1,6 @@
 <?php
-require_once("..\model\connect.php");
-require_once("..\model\aeropuerto.php");
+require_once("..\model\conexion.php");
+require_once("..\model\usario.php");
 
     function Usuarios($nom,$eda,$npa,$pais,$dirrec,$tel,$ema,$cla){
     $con=new conexion();

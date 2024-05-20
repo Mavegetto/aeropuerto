@@ -1,6 +1,6 @@
 <?php
-require_once("..\model\connect.php");
-require_once("..\model\aeropuerto.php");
+require_once("..\model\conexion.php");
+require_once("..\model\asint.php");
 
     function Aeropuerto($no_asi, $posicion, $id_avion){
     $con=new conexion();

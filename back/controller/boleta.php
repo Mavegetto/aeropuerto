@@ -1,6 +1,6 @@
 <?php
-require_once("..\model\connect.php");
-require_once("..\model\aeropuerto.php");
+require_once("..\model\conexion.php");
+require_once("..\model\bolet.php");
 
     function Aeropuerto($hora){
     $con=new conexion();

@@ -1,6 +1,7 @@
 <?php
-require_once("..\model\connect.php");
-require_once("..\model\aeropuerto.php");
+require_once("..\model\conexion.php");
+require_once("..\model\aeropue.php");
+
 
     function Aeropuerto($nombre, $direccion, $pais){
     $con=new conexion();

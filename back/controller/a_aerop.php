@@ -1,5 +1,5 @@
 <?php
-require_once("..\model\connect.php");
+require_once("..\model\conexion.php");
 require_once("..\model\aeropuerto.php");
 
     function Vuelos($nom,$usu,$eda,$nbo,$asie,$vue){

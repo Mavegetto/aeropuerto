@@ -17,7 +17,7 @@ class Asiento {
     }
 
     public function extraer(){
-        return "SELECT * FROM "
+        return "SELECT * FROM asientos";
     }
 }
 
