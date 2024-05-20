@@ -1,8 +1,8 @@
-var Aerolinea;
+var Formulario;
 
 function cargar(){
 
-fetch("http://localhost/")
+fetch("http://localhost/view/base.datos.php")
 .then(reponse=>reponse.json())
 .then(data=>{
 console.log(data);
@@ -18,7 +18,7 @@ let carta=` <tr>
 <td>${data[x].asiento}</td>
 <td>${data[x].vuelo}</td>
 </tr>`;
-document.getElementById('aerolinea').innerHTML= document.getElementById('aerolinea').innerHTML;
+document.getElementById('aerolinea').innerHTML= document.getElementById('aerolinea').innerHTML + carta;
 }
 
 
@@ -26,7 +26,7 @@ document.getElementById('aerolinea').innerHTML= document.getElementById('aerolin
 });
 }
 
-document.getElementById('').addEventListener("click",()=>{
+document.getElementById('aerolinea').addEventListener("click",()=>{
 
   formulario = new FormData();
 
@@ -38,7 +38,7 @@ document.getElementById('').addEventListener("click",()=>{
   formulario.append('vue',document.getElementById('vue').value);
 
  
-  let respon=fetch("",{
+  let respon=fetch("http://localhost/view/base.datos.php",{
     method:"POST",
     
   });
